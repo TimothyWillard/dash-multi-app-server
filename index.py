@@ -18,6 +18,13 @@ app.layout = html.Div([
         children = html.H1(cfg["serverName"], style = {"textAlign": "center"}),
         href = "/"
     ),
+    dcc.Link(
+        children = html.H3(cfg["otherLinkName"], style = {
+            "display": "block" if cfg["otherLinkName"] != None else "none",
+            "textAlign": "center"
+        }),
+        href = cfg["otherLinkHref"]
+    ),
     html.Hr(),
     html.Div(id = "page-content")
 ])

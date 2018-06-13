@@ -1,6 +1,8 @@
 config = {
   "serverName": "Dash Multi-App Server",
   "debug": True,
+  "otherLinkName": None,
+  "otherLinkHref": "#",
   "apps": [
     {
       "name": "app1",
